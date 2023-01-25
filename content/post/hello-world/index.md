@@ -6,7 +6,7 @@ description: Welcome to my website!
 image: cover.jpg
 slug: hello-world
 tags:
-- Example Tag
+- 
 title: Hello World
 ---
 
