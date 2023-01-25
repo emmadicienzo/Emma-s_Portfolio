@@ -7,7 +7,7 @@ image: cover.jpg
 slug: hello-world
 tags:
 - 
-title: Hello World
+title: About Me
 ---
 
 ## About Me 
