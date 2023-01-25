@@ -10,7 +10,7 @@ tags:
 title: About Me
 ---
 
-## About Me 
+## Short Introduction 
 
 Hi everyone! My name is Emma DiCienzo and I am a 4th year student in the Cognitive Science of Language Program at McMaster University. I hope to one day become a Speech Language Pathologist.
 
