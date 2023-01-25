@@ -1,9 +1,9 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2020-12-01T21:13:14-05:00
+title: "Programs"
+author: "Emma DiCienzo"
+date: 2023-01-25
 categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+tags: ["R Markdown"]
 ---
 
 
