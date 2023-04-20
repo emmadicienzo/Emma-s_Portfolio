@@ -17,7 +17,7 @@ Hi everyone! My name is Emma DiCienzo and I am a 4th year student in the Cogniti
 
 ## Website Purpose 
 - display my programming abilities 
-- target audience: future employers, those in the SLP community
+- target audience: those in the SLP community, students taking linguistics courses
 
 ## More Information 
 For more information about this theme, check the documentation: https://docs.stack.jimmycai.com/
