@@ -1,7 +1,7 @@
 ---
 title: "Shiny App"
 author: "Emma DiCienzo"
-date: 2023-01-25
+date: 2023-04-20
 categories: ["R"]
 tags: ["R Markdown"]
 ---
@@ -13,7 +13,7 @@ The Shiny App I am creating allows users to explore and visualize the Beginning 
 
 The problem this tool aims to solve is to help linguistics students using this package, to better understand children’s reading development by providing an interactive and user-friendly way to explore and analyze data related to their reading performance. This tool will help them visualize the data better, which in turn will help them better understand what the data is representing.
 
-Here is a link to my first Shiny App: https://emmashinyapp.shinyapps.io/LINGUIST4PL3/?_ga=2.202306769.1310634393.1677631449-556699553.1677631449
+Here is a link to my first Shiny App if you would like to test it out: https://emmashinyapp.shinyapps.io/LINGUIST4PL3/?_ga=2.202306769.1310634393.1677631449-556699553.1677631449
 
 # Here is the code I produced to create this shiny app.
 
