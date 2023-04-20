@@ -9,6 +9,82 @@ tags: ["R Markdown"]
 
 
 # Shiny App 
+The Shiny App I am creating allows users to explore and visualize the Beginning Readers dataset, which provides information about the reading performance of young children. The app includes two tabs: “Visualizing Variables” and “Data Per Word.” The “Visualizing Variables” tab allows users to select and plot specific variables from the dataset, while the “Data Per Word” tab allows users to view data for a specific word from the dataset.
+
+The problem this tool aims to solve is to help linguistics students using this package, to better understand children’s reading development by providing an interactive and user-friendly way to explore and analyze data related to their reading performance. This tool will help them visualize the data better, which in turn will help them better understand what the data is representing.
 
 Here is a link to my first Shiny App: https://emmashinyapp.shinyapps.io/LINGUIST4PL3/?_ga=2.202306769.1310634393.1677631449-556699553.1677631449
 
+# Here is the code I produced to create this shiny app.
+
+```{r, echo=TRUE, eval=FALSE}
+library(shiny)
+library(languageR)
+library(tidyverse)
+
+ui <- fluidPage(
+  # App Title
+  titlePanel("LINGUIST 4PL3 Homework 5"),
+  
+  # Customized Tabs
+  tabsetPanel(type = "tabs",
+              # Tab 1: Description
+              tabPanel("Description",
+                       p("This app provides information about the beginningReaders dataset."),
+                       br(),
+                       p("The tab titled Visualizing Variables allows the user to select a variable from the Beginning Readers dataset to plot, and the number of observations to display in both a plot and a table."),
+                       br(),
+                       p("The tab titled Data Per Word allows the user to select a word from the Beginning Readers dataset and shows the data for that word in a table")
+              ),
+              # Tab 2: Visualizing Variables  
+              tabPanel("Visualizing Variables",
+                       sidebarPanel(
+                         selectInput("var", "Select a variable to plot:",
+                                     choices = c("LogRT", "ProportionOfErrors")),
+                         sliderInput("num", "Number of observations to display:", 
+                                     min = 1, max = nrow(beginningReaders), value = 10),
+                       ),
+                       
+                       mainPanel(
+                         plotOutput("plot"),
+                         tableOutput("table")
+                       )
+              ),    
+              # Tab 3: Data Per Word  
+              tabPanel("Data Per Word",
+                       selectInput("word", "Select a Word from the beginningReaders Dataset:",
+                                   choices = unique(beginningReaders$Word)),
+                       mainPanel(
+                         tableOutput("wordTable")
+                       )
+              )
+  )
+)
+
+server <- function(input, output) {   
+  
+  output$plot <- renderPlot({
+    ggplot(data = beginningReaders[1:input$num,], aes_string(x = input$var)) +
+      geom_bar() +
+      labs(title = input$var, x = input$var, y = "Frequency")
+  })
+  
+
+  output$table <- renderTable({
+    head(beginningReaders[, input$var], n = input$num)
+  })
+  
+  wordData <- reactive({
+    word <- input$word
+    subset(beginningReaders, word == Word)
+  })
+  
+  output$wordTable <- renderTable({
+    wordData()
+  })
+}
+
+# Run the application 
+shinyApp(ui, server)
+
+```
