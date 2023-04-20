@@ -8,7 +8,7 @@ tags: ["R Markdown"]
 
 
 
-# Shiny App 
+# My Shiny App 
 The Shiny App I am creating allows users to explore and visualize the Beginning Readers dataset, which provides information about the reading performance of young children. The app includes two tabs: “Visualizing Variables” and “Data Per Word.” The “Visualizing Variables” tab allows users to select and plot specific variables from the dataset, while the “Data Per Word” tab allows users to view data for a specific word from the dataset.
 
 The problem this tool aims to solve is to help linguistics students using this package, to better understand children’s reading development by providing an interactive and user-friendly way to explore and analyze data related to their reading performance. This tool will help them visualize the data better, which in turn will help them better understand what the data is representing.
