@@ -10,7 +10,7 @@ tags: ["R Markdown"]
 # My Swirl Course 
 The swirl course I decided to create was a Beginners IPA course that teachs the user about using the International Phonetic Alphabet (IPA) for the English language. In this course, there are three lessons. The first lesson is on English consonants, and here, the user learns how to classify English consonants, as well as the IPA symbols for the consonant sounds. The second lesson is on Enlgish vowels, and here, the users learns how to classify English vowels, learn the IPA symbols for each vowel sound, and learn the diphthongs used in English. The final lesson is on transcription, and here, the user gets to put their knowledge to the test by practicing transcribing some English words. 
 
-The purpose of this course it to help first year students enrolled in LINGUIST 1A03 practice and learn about the IPA. This course is a great tool for them to study for both their quizzes, midterms, and exam in a fun and interactive way. It will also help them become familiar with R programming, in preparation for their upper year courses! 
+The purpose of this course it to help first year students enrolled in LINGUIST 1A03 to practice and learn about the IPA. This course is a great tool for them to study for both their quizzes, midterms, and exam in a fun and interactive way. It will also help them become familiar with R programming, in preparation for their upper year courses! 
 
 This course is also open to anyone who isn't in LINGUIST 1A03 and just wants to learn about the IPA for fun!
 
