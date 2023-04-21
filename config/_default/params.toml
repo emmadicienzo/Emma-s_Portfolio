@@ -18,7 +18,7 @@ subtitle = "Welcome to my LINGUIST 4PL3 final project."
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "smiles.jpg"
 
 [article]
 math = false
